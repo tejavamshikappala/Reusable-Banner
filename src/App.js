@@ -1,6 +1,6 @@
 import './App.css'
 import Welcome from './components/BannerCardItem/index'
-import './components/BannerCardItem/index.css'
+// import './components/BannerCardItem/index.css'
 
 const bannerCardsList = [
   {
@@ -25,10 +25,9 @@ const bannerCardsList = [
 ]
 
 const App = () => (
-  // <h1>Replace this element with your code</h1>
-  <ul className="forUl">
-    {bannerCardsList.map(eachItem => (
-      <Welcome bannerProp={eachItem} key={eachItem.id} />
+  <ul className="for-ul">
+    {bannerCardsList.map(each => (
+      <Welcome eachBanner={each} key={each.id} />
     ))}
   </ul>
 )

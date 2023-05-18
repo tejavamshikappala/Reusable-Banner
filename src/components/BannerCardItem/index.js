@@ -2,23 +2,21 @@
 import './index.css'
 
 const Welcome = props => {
-  const {bannerProp} = props
-  const {headerText, description, className} = bannerProp
-
+  const {eachBanner} = props
+  const {headerText, className, description} = eachBanner
   return (
-    <div className="List-container">
-      <li className={className}>
-        <div className="forRow">
-          <h1 className="forHeader">{headerText}</h1>
-          <p className="forPara">{description}</p>
-          <div>
-            <button className="for-button" onClick="">
-              Show More
-            </button>
-          </div>
+    <li className={`List-container ${className}`}>
+      <div className="for-row">
+        <h1 className="for-header">{headerText}</h1>
+        <p className="for-para">{description}</p>
+        <div>
+          <button className="for-button" type="button">
+            Show More
+          </button>
         </div>
-      </li>
-    </div>
+      </div>
+    </li>
   )
 }
+
 export default Welcome

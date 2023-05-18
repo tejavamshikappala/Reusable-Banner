@@ -12,7 +12,7 @@ body {
 }
 
 /* Write your code here. */
-.forUl {
+.for-ul {
   display: flex;
   flex-direction: column;
   margin: 40px;

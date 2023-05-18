@@ -29,7 +29,7 @@
   border-width: 2px;
   border-color: #cbced2;
 }
-.forRow {
+.for-row {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,12 +45,12 @@
   font-family: 'Roboto';
   font-weight: 500;
 }
-.forHeader {
+.for-header {
   color: #326a9d;
   font-family: 'Roboto';
 }
 
-.forPara {
+.for-para {
   color: #64748b;
   font-family: 'Roboto';
   font-weight: 600;
@@ -60,5 +60,14 @@
   .card-1 {
     background-image: none;
     background-color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .card-2 {
+    padding-right: 170px;
+  }
+  .card-1 {
+    padding-left: 30px;
   }
 }
